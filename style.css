@@ -1,0 +1,589 @@
+
+/* ==============================
+   GENERAL STYLING
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fafbf8;
+    color: #26382e;
+}
+
+/* ==============================
+   ANNOUNCEMENT BAR
+============================== */
+
+.announcement {
+    background: #173f32;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+.navbar {
+    background: white;
+    padding: 17px 0;
+    border-bottom: 1px solid #e8eee9;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    font-weight: 800;
+    color: #174c37;
+    letter-spacing: -1px;
+}
+
+.navbar-brand span,
+.footer h3 span {
+    color: #75a96b;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-actions a {
+    color: #34483c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-actions a:hover {
+    color: #318451;
+}
+
+.wishlist-nav {
+    background: #edf5ed;
+    color: #28633f;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wishlist-nav:hover {
+    background: #dcebdc;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.hero-section {
+    background:
+        radial-gradient(circle at 85% 20%, #c9e5c8 0, transparent 28%),
+        linear-gradient(110deg, #edf5e9, #dcebd9);
+
+    padding: 75px 0;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label,
+.section-label {
+    color: #54815b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: clamp(36px, 5vw, 54px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #183e2e;
+    margin: 17px 0;
+    letter-spacing: -1.5px;
+}
+
+.hero-content h1 span {
+    color: #548b54;
+}
+
+.hero-content p {
+    color: #607466;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.hero-button {
+    background: #286b43;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background: #174c30;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   BENEFITS SECTION
+============================== */
+
+.benefits-section {
+    background: white;
+    padding: 24px 0;
+    border-bottom: 1px solid #edf0eb;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+}
+
+.benefit > span {
+    font-size: 27px;
+}
+
+.benefit h6 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.benefit p {
+    font-size: 12px;
+    color: #829087;
+    margin: 0;
+    text-align: left;
+}
+
+/* ==============================
+   SHOPPING SECTION
+============================== */
+
+.shop-section {
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+.shop-heading {
+    margin-bottom: 25px;
+}
+
+.shop-heading h2,
+.comparison-section h2 {
+    color: #203e2e;
+    font-size: 30px;
+    font-weight: 750;
+    margin-top: 8px;
+}
+
+.shop-heading p,
+.comparison-section > p {
+    color: #849087;
+    font-size: 14px;
+}
+
+/* ==============================
+   FILTER SIDEBAR
+============================== */
+
+.filter-box {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e9eee8;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(35, 70, 45, 0.04);
+    position: sticky;
+    top: 20px;
+}
+
+.filter-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.filter-heading h5 {
+    font-weight: 750;
+    margin: 0;
+}
+
+.filter-heading span {
+    font-size: 19px;
+    color: #65946a;
+}
+
+.form-label {
+    color: #43554a;
+    font-size: 13px;
+    font-weight: 650;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e0e7df;
+    border-radius: 6px;
+    padding: 11px;
+    font-size: 13px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #72a77a;
+    box-shadow: 0 0 0 3px rgba(70, 140, 80, 0.1);
+}
+
+.reset-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8d1bb;
+    background: white;
+    color: #39744a;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background: #edf5ed;
+}
+
+.eco-note {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f0f6ed;
+    border-radius: 7px;
+    font-size: 12px;
+    color: #527052;
+    line-height: 1.6;
+}
+
+.eco-note p {
+    margin: 5px 0 0;
+}
+
+/* ==============================
+   PRODUCT TOOLBAR
+============================== */
+
+.products-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.products-toolbar p {
+    font-size: 14px;
+    color: #718075;
+    margin: 0;
+}
+
+.compare-button {
+    border: none;
+    background: #286b43;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.compare-button:hover {
+    background: #174c30;
+}
+
+.compare-hint {
+    font-size: 12px;
+    color: #8a958c;
+    margin: 12px 0 22px;
+}
+
+/* ==============================
+   PRODUCT CARDS
+============================== */
+
+.product-card {
+    background: white;
+    border: 1px solid #e9eee8;
+    border-radius: 10px;
+    padding: 12px;
+    height: 100%;
+    box-shadow: 0 3px 14px rgba(30, 60, 40, 0.04);
+    transition: 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 24px rgba(30, 60, 40, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 14px;
+    background: #f0f3ed;
+}
+
+.product-card h5 {
+    color: #263d30;
+    font-size: 16px;
+    font-weight: 750;
+    margin-bottom: 7px;
+    min-height: 38px;
+}
+
+.product-card .text-muted {
+    font-size: 12px;
+}
+
+.product-description {
+    font-size: 12px;
+    color: #7c897f;
+    line-height: 1.5;
+    min-height: 37px;
+}
+
+.product-price {
+    color: #214b32;
+    font-size: 19px;
+    font-weight: 750;
+    margin: 7px 0;
+}
+
+/* ECO SCORE BADGES */
+
+.eco-badge {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 750;
+    margin: 5px 0;
+}
+
+.score-A {
+    background: #e1f2e2;
+    color: #24743a;
+}
+
+.score-B {
+    background: #eaf3dc;
+    color: #527d2c;
+}
+
+.score-C {
+    background: #fff2cf;
+    color: #96701a;
+}
+
+.score-D {
+    background: #ffead8;
+    color: #ad5b22;
+}
+
+.score-E {
+    background: #fce2dc;
+    color: #b34d3c;
+}
+
+.score-F {
+    background: #f4dadd;
+    color: #982d3b;
+}
+
+.no-data {
+    background: #eceeed;
+    color: #5d6860;
+}
+
+/* PRODUCT BUTTONS */
+
+.product-card .btn {
+    font-size: 12px;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.product-card .btn-success {
+    background: #286b43;
+    border-color: #286b43;
+}
+
+.product-card .btn-success:hover {
+    background: #174c30;
+}
+
+.product-card .btn-outline-success {
+    color: #286b43;
+    border-color: #9ebda2;
+}
+
+.product-card .btn-outline-success:hover {
+    color: white;
+    background: #286b43;
+}
+
+.product-card .form-check {
+    font-size: 12px;
+    color: #657368;
+    margin-top: 12px;
+}
+
+/* ==============================
+   COMPARISON SECTION
+============================== */
+
+.comparison-section {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e9eee8;
+    border-radius: 10px;
+}
+
+.comparison-section h2 {
+    margin-bottom: 8px;
+}
+
+.comparison-section .table {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.comparison-section .table th {
+    background: #eaf3e9;
+    color: #28543a;
+}
+
+/* ==============================
+   PRODUCT DETAILS MODAL
+============================== */
+
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #f1f6ef;
+    border-bottom: 1px solid #e5eee3;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: #244d34;
+}
+
+.details-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details-price {
+    color: #286b43;
+    font-weight: 750;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    background: #173f32;
+    color: white;
+    padding: 38px 0;
+}
+
+.footer h3 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.footer p {
+    color: #d0ded3;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer small {
+    color: #b4c9b8;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 55px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    .nav-actions {
+        gap: 14px;
+    }
+
+    .benefit {
+        justify-content: flex-start;
+        padding: 12px 25px;
+    }
+
+    .filter-box {
+        position: static;
+    }
+
+    .products-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .product-image {
+        height: 210px;
+    }
+
+    .comparison-section {
+        padding: 20px;
+    }
+
+}
