@@ -8,27 +8,27 @@ let wishlistMode = false;
 
 // Product Images - Local Images
 const productImages = {
-    "Organic Cotton T-Shirt": "/images/cotton_tshirt.jpg",
+    "Organic Cotton T-Shirt": "/cotton_tshirt.jpg",
 
-    "Reusable Water Bottle": "/images/resusable_waterbottle.png",
+    "Reusable Water Bottle": "/resusable_waterbottle.png",
 
-    "Bamboo Toothbrush": "/images/Flat_Straight_Bamboo_Toothbrush.webp",
+    "Bamboo Toothbrush": "/Flat_Straight_Bamboo_Toothbrush.webp",
 
-    "Recycled Paper Notebook": "/images/recycled_notebook.webp",
+    "Recycled Paper Notebook": "/recycled_notebook.webp",
 
-    "Canvas Shopping Bag": "/images/shopping_bag.jpg",
+    "Canvas Shopping Bag": "/shopping_bag.jpg",
 
-    "LED Bulb": "/images/led_bulb.webp",
+    "LED Bulb": "/led_bulb.webp",
 
-    "Plastic Storage Box": "/images/plastic_storage_bag.jpg",
+    "Plastic Storage Box": "/plastic_storage_bag.jpg",
 
-    "Synthetic Sports T-Shirt": "/images/synthetic_sports_tshirt.webp",
+    "Synthetic Sports T-Shirt": "/synthetic_sports_tshirt.webp",
 
-    "Disposable Paper Cups": "/images/disposable_paper_cups.jpg",
+    "Disposable Paper Cups": "/disposable_paper_cups.jpg",
 
-    "Plastic Water Bottle": "/images/plastic_waterbottle.avif",
+    "Plastic Water Bottle": "/plastic_waterbottle.avif",
 
-    "Fashion Jacket": "/images/fashion_jacket.webp"
+    "Fashion Jacket": "/fashion_jacket.webp"
 };
 
 // Get Product Image
